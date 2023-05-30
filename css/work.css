@@ -1,0 +1,82 @@
+body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+    background-color: rgb(25,25,25);  
+  }
+
+/* 메뉴 스타일 시작 */
+.menu a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 12px;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: #f1c40f;
+    transition: all .5s ease-out;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+/* 메뉴 스타일 끝 */
+
+/* 로고 스타일 시작 */
+
+.hoc {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 1000px;
+    top: 250px;
+}
+
+.oz {
+    top: 250px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+
+.bg {
+    top: 1500px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}
+
+/* 로고 스타일 끝 */
+
+p {
+    position: relative;
+    top: 700px;
+    left: 350px;
+    font-size: 20px;
+    text-align: center;
+}
+
+ /* Animation */
+ .anim-typewriter{
+    animation: typewriter 1s steps(33) 1s 1 normal both,
+               blinkTextCursor 300ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 10em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
